@@ -35,19 +35,19 @@ Designed to provide an engaging user experience for fitness enthusiasts, gym mem
 
 ---
 
-# 📂 PROJECT STRUCTURE
+# 📁 PROJECT STRUCTURE
 
-
+```text
 fitness-club-website/
 │
-├── 📁 screenshots/
+├── screenshots/
 │
-├── 📁 static/
+├── static/
 │   ├── css/
 │   ├── js/
 │   └── images/
 │
-├── 📁 templates/
+├── templates/
 │   ├── base.html
 │   ├── index.html
 │   ├── about.html
@@ -56,12 +56,10 @@ fitness-club-website/
 │   ├── schedule.html
 │   └── contact.html
 │
-├── 🐍 app.py
+├── app.py
 │
-└── 📄 README.md
-
-
----
+└── README.md
+```
 
 # 📸 WEBSITE PREVIEW
 
