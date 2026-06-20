@@ -1,0 +1,43 @@
+<section class="bmi-section">
+    <div class="container">
+
+        <h2>🧮 BMI Calculator</h2>
+        <p class="subtitle">
+            Check your Body Mass Index and know your fitness category.
+        </p>
+
+        <div class="bmi-box">
+
+            <div class="bmi-form">
+
+                <input type="number" id="height" placeholder="Height (cm)">
+                <input type="number" id="weight" placeholder="Weight (kg)">
+
+                <button id="calculateBMI">Calculate BMI</button>
+
+                <div id="bmiResult"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>
+            BMI Calculator
+        </h1>
+
+    </div>
+
+</section>
+
+{% endblock %}

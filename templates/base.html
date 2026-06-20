@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Fitness & Wellness
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/components.css') }}">
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/responsive.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="logo">
+                FitLife
+            </div>
+
+            <nav class="navbar">
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/workout-plans">
+                            Workouts
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/nutrition">
+                            Nutrition
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/schedule">
+                            Schedule
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/success-stories">
+                            Success Stories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/bmi">
+                            BMI
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pricing">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button
+                    id="darkModeBtn"
+                    class="dark-btn">
+
+                    🌙
+
+                </button>
+
+                <button
+                    id="menuBtn"
+                    class="menu-btn">
+
+                    ☰
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+   
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>
+                        FitLife
+                    </h3>
+
+                    <p>
+                        Transform your body,
+                        improve your health,
+                        and build lifelong habits.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="/">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/workout-plans">
+                                Workout Plans
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/nutrition">
+                                Nutrition
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Contact
+                    </h3>
+
+                    <p>
+                        support@fitlife.com
+                    </p>
+
+                    <p>
+                        +91 98765 43210
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+
+                © 2026 FitLife.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}">
+    </script>
+
+</body>
+
+</html>

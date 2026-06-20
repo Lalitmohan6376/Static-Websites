@@ -1,0 +1,481 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<section class="hero">
+
+    <video autoplay muted loop playsinline class="hero-video">
+
+        <source
+            src="{{ url_for('static', filename='videos/v.mp4') }}"
+            type="video/mp4">
+
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+
+        <h1>
+            Transform Your Body,
+            Transform Your Life
+        </h1>
+
+        <p>
+            Personalized workouts, nutrition guidance,
+            and wellness coaching to help you achieve
+            your fitness goals.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/workout-plans" class="btn btn-primary">
+                Explore Plans
+            </a>
+
+            <a href="/pricing" class="btn btn-secondary">
+                Join Today
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h2 class="counter" data-target="5000">
+                    0
+                </h2>
+
+                <p>
+                    Active Members
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 class="counter" data-target="120">
+                    0
+                </h2>
+
+                <p>
+                    Expert Trainers
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 class="counter" data-target="95">
+                    0
+                </h2>
+
+                <p>
+                    Success Rate %
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 class="counter" data-target="10">
+                    0
+                </h2>
+
+                <p>
+                    Years Experience
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="benefits-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Why Choose FitLife?
+            </h2>
+
+            <p>
+                Everything you need to stay healthy,
+                strong, and motivated.
+            </p>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <article class="benefit-card">
+
+                <h3>
+                    Personalized Plans
+                </h3>
+
+                <p>
+                    Customized workout routines designed
+                    for beginners and advanced athletes.
+                </p>
+
+            </article>
+
+            <article class="benefit-card">
+
+                <h3>
+                    Nutrition Guidance
+                </h3>
+
+                <p>
+                    Healthy meal strategies to support
+                    your fitness journey.
+                </p>
+
+            </article>
+
+            <article class="benefit-card">
+
+                <h3>
+                    Expert Coaching
+                </h3>
+
+                <p>
+                    Learn from experienced trainers and
+                    wellness professionals.
+                </p>
+
+            </article>
+
+            <article class="benefit-card">
+
+                <h3>
+                    Community Support
+                </h3>
+
+                <p>
+                    Stay motivated with a positive and
+                    goal-oriented fitness community.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURED WORKOUTS -->
+
+<section class="workouts-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Featured Workout Plans
+            </h2>
+
+        </div>
+
+        <div class="workout-grid">
+
+            <div class="workout-card">
+
+                <img
+                    src="{{ url_for('static', filename='images/1.jpg') }}"
+                    alt="Weight Training">
+
+                <div class="card-content">
+
+                    <h3>
+                        Strength Training
+                    </h3>
+
+                    <p>
+                        Build muscle and improve strength.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="workout-card">
+
+                <img
+                    src="{{ url_for('static', filename='images/h.jpg') }}"
+                    alt="Cardio Workout">
+
+                <div class="card-content">
+
+                    <h3>
+                        Cardio Program
+                    </h3>
+
+                    <p>
+                        Burn calories and improve endurance.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="workout-card">
+
+                <img
+                    src="{{ url_for('static', filename='images/3.jpg') }}"
+                    alt="Yoga Session">
+
+                <div class="card-content">
+
+                    <h3>
+                        Yoga & Flexibility
+                    </h3>
+
+                    <p>
+                        Improve mobility and reduce stress.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MOTIVATION SECTION -->
+
+<section class="motivation-section">
+
+    <div class="container">
+
+        <div class="motivation-content">
+
+            <h2>
+                Your Only Competition Is
+                The Person You Were Yesterday
+            </h2>
+
+            <p>
+                Small improvements every day lead to
+                incredible long-term results.
+            </p>
+
+            <a href="/schedule" class="btn btn-primary">
+                Start Your Journey
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIALS PREVIEW -->
+
+<section class="testimonials-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                What Our Members Say
+            </h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <p>
+                    "I lost 15 kg and gained confidence.
+                    The coaching and workouts were amazing."
+                </p>
+
+                <h4>
+                    Rahul Sharma
+                </h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    "The nutrition plans helped me build
+                    healthy habits that actually last."
+                </p>
+
+                <h4>
+                    Priya Verma
+                </h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    "The trainers are supportive and the
+                    community keeps me motivated."
+                </p>
+
+                <h4>
+                    Aman Singh
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ SECTION -->
+
+<section class="faq-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Is FitLife suitable for beginners?
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. Our workout plans are designed
+                        for all fitness levels.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Do I need gym equipment?
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Not necessarily. We provide both
+                        home and gym workout plans.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Do you provide nutrition guidance?
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. We provide balanced meal
+                        recommendations and healthy habits.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How do I start?
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Simply explore our plans and choose
+                        the one that fits your goals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA SECTION -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <h2>
+            Ready To Become Your Best Version?
+        </h2>
+
+        <p>
+            Start your fitness transformation today.
+        </p>
+
+        <a href="/pricing" class="btn btn-primary">
+
+            Join Now
+
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}
