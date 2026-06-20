@@ -59,17 +59,7 @@ fitness-club-website/
 ├── app.py
 │
 └── README.md
-```
 
-# 📸 WEBSITE PREVIEW
-
-![Screenshot 1](screenshots/home.png)
-
-![Screenshot 2](screenshots/classes.png)
-
-![Screenshot 3](screenshots/schedule.png)
-
----
 
 # ⚙️ INSTALLATION
 
