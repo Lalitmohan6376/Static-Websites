@@ -59,7 +59,7 @@ fitness-club-website/
 ├── app.py
 │
 └── README.md
-
+```
 
 # ⚙️ INSTALLATION
 
