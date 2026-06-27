@@ -61,11 +61,7 @@ fitness-club-website/
 └── README.md
 ```
 
-# ⚙️ INSTALLATION
 
-
-# Clone the repository
-git clone https://github.com/your-username/fitness-club-website.git
 
 # Navigate to project folder
 cd fitness-club-website
